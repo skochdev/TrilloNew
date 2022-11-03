@@ -1,0 +1,59 @@
+.header-nav {
+  align-self: stretch;
+
+  &__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-container {
+    position: relative;
+    @include flexBox();
+    align-self: stretch;
+    width: 6rem;
+    background-color: transparent;
+    transition: var(--transition-bgc);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-background-300);
+    }
+  }
+
+  &__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    fill: var(--color-text-300);
+  }
+
+  &__icon-chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--color-primary);
+  }
+
+  &__user-image-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__user-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}

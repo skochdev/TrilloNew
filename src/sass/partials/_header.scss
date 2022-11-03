@@ -1,0 +1,65 @@
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-background-400);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 3.25rem;
+    margin-left: 3rem;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    flex: 0 0 40%;
+  }
+
+  &__search-icon {
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  &__search-input {
+    width: 100%;
+    color: var(--color-text-400);
+    transform: scaleX(0.98);
+    font-size: 1.4rem;
+    background-color: var(--color-background-200);
+    border: 1px solid transparent;
+    padding: 0.7rem 2rem;
+    border-radius: 100vw;
+    transition: var(--transition-border), var(--transition-bgc);
+    margin-right: -5rem;
+
+    &::placeholder {
+      color: var(--color-text-200);
+    }
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      border: 1px solid var(--color-background-400);
+    }
+  }
+
+  &__search-btn {
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-background-200);
+    transition: var(--transition-fill);
+    z-index: 2;
+
+    &:focus {
+      outline: none;
+      fill: var(--color-primary);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  /* COLORS */
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primarydark: #ba265d;
+
+  --color-background-100: #faf9f9;
+  --color-background-200: #f4f2f2;
+  --color-background-300: #f0eeee;
+  --color-background-400: #ccc;
+
+  --color-text-100: var(--color-background-300);
+  --color-text-200: #999;
+  --color-text-300: #777;
+  --color-text-400: #333;
+
+  /* Transitions*/
+  --default-cubic: cubic-bezier(0.33, 0.4, 0.58, 0.75);
+  --default-timing: 150ms;
+  --transition-color: color var(--default-timing) var(--default-cubic);
+  --transition-transform: transform var(--default-timing) var(--default-cubic);
+  --transition-bgc: background-color var(--default-timing) var(--default-cubic);
+  --transition-border: border var(--default-timing) var(--default-cubic);
+  --transition-scale: scale var(--default-timing) var(--default-cubic);
+  --transition-fill: fill var(--default-timing) var(--default-cubic);
+}

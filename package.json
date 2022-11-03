@@ -1,0 +1,25 @@
+{
+  "name": "TrilloNew",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://skochdev.github.io/TrilloNew",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /TrilloNew/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": [
+    "> 0.5%, last 2 versions, not dead"
+  ]
+}

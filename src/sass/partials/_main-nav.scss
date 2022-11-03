@@ -1,0 +1,46 @@
+.main-nav {
+  background-color: var(--color-text-400);
+  color: var(--color-text-100);
+  display: flex;
+  flex: 0 0 18%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__sidebar {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sidebar-item {
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  &__sidebar-link {
+    padding: 1rem 1.3rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__sidebar-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    fill: var(--color-text-100);
+  }
+
+  &__sidebar-item-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__legal-note {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
