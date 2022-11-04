@@ -7,14 +7,42 @@
   justify-content: space-between;
 
   &__sidebar {
-    padding: 1rem 1rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
   }
 
   &__sidebar-item {
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 3;
+
     & + & {
       margin-top: 2rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: var(--color-primary);
+      width: 3%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: var(--transition-transform),
+        width 250ms 150ms var(--default-cubic), var(--transition-bgc);
+    }
+
+    &:hover::before,
+    &--current::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -25,18 +53,19 @@
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+    position: relative;
   }
 
   &__sidebar-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 1rem;
-    fill: var(--color-text-100);
+    fill: currentColor;
   }
 
   &__sidebar-item-title {
     font-size: 1.4rem;
-    font-weight: 700;
+    line-height: 1;
   }
 
   &__legal-note {
