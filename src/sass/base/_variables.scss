@@ -23,4 +23,10 @@
   --transition-border: border var(--default-timing) var(--default-cubic);
   --transition-scale: scale var(--default-timing) var(--default-cubic);
   --transition-fill: fill var(--default-timing) var(--default-cubic);
+
+  /*Borders*/
+  --border-bottom-line: 1px solid var(--color-background-300);
+
+  /*Shadows*/
+  --box-shadow-left: -4px 10px 14px 0px rgba(180, 180, 180, 0.8);
 }

@@ -1,0 +1,37 @@
+.hotel-details {
+  background-color: var(--color-background-200);
+  padding: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--border-bottom-line);
+
+  .hotel-details__description {
+    flex: 0 0 60%;
+    font-size: 1.4rem;
+    margin-right: 4.5rem;
+    box-shadow: var(--box-shadow-left);
+    border-bottom: var(--border-bottom-line);
+
+    &-textbox {
+      border-bottom: var(--border-bottom-line);
+    }
+
+    &-features {
+      border-bottom: var(--border-bottom-line);
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+
+  .hotel-details__description-recommendations {
+    display: flex;
+
+    .hotel-details__description-recommendations-list {
+      display: flex;
+    }
+  }
+
+  .hotel-details__reviews {
+    flex: 1;
+  }
+}
